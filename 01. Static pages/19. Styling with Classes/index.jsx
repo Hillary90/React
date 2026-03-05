@@ -9,8 +9,8 @@ const root = createRoot(document.getElementById("root"))
  */
 function NavBar() {
     return(
-        <nav>
-            <ul>
+        <nav >
+            <ul className="nav-list-items">
                 <li>Pricing</li>
                 <li>About</li>
                 <li>Contact</li>
@@ -21,8 +21,10 @@ function NavBar() {
 
 function Header() {
     return (
-        <header>
+        <header className="header">
             <img src="react-logo.png" width="40px" alt="React logo" />
+
+            <NavBar />
             
         </header>
     )
@@ -51,7 +53,6 @@ function Footer() {
 function Page() {
     return (
         <>  
-            <NavBar />
             <Header />
             <MainContent />
             <Footer />
