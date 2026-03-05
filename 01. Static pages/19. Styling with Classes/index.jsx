@@ -7,6 +7,17 @@ const root = createRoot(document.getElementById("root"))
  * - Add a `nav` > `ul` > `li` (x3). The 3 items should say:
  *   "Pricing", "About", and "Contact"
  */
+function NavBar() {
+    return(
+        <nav>
+            <ul>
+                <li>Pricing</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    )
+}
 
 function Header() {
     return (
@@ -39,7 +50,8 @@ function Footer() {
 
 function Page() {
     return (
-        <>
+        <>  
+            <NavBar />
             <Header />
             <MainContent />
             <Footer />
